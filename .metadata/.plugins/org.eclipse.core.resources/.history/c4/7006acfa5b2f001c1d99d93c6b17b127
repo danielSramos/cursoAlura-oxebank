@@ -1,0 +1,20 @@
+package teste;
+
+public class TesteTributaveis {
+
+	public static void main(String[] args) {
+		
+		modelo.ContaCorrente cc = new br.com.oxebank.banco.modelo.ContaCorrente(22, 10);
+		cc.deposita(100.0);
+		
+		modelo.SeguroVida sv = new modelo.SeguroVida();
+		
+
+		modelo.CalculadorImposto ci = new modelo.CalculadorImposto();
+		ci.registra(cc);
+		ci.registra(sv);
+		
+		System.out.println(ci.getTotalImposto());
+	}
+
+}

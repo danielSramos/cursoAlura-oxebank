@@ -1,0 +1,13 @@
+
+public class ControleBonificacao {
+	private double soma;
+	
+	public void registra(Gerente gerente) {
+		double bonificacao = gerente.getBonificacao();
+		this.soma += bonificacao;
+	}
+	
+	public double getSoma() {
+		return soma;
+	}
+}

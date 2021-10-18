@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring accessors="true" comment="Delete element from project &apos;oxebank-biblioteca&apos;&#x0D;&#x0A;- Original project: &apos;oxebank-biblioteca&apos;&#x0D;&#x0A;- Original element: &apos;oxebank-exec-1.0.jar&apos;" description="Delete element" element1="libs/oxebank-exec-1.0.jar" elements="0" flags="589830" id="org.eclipse.jdt.ui.delete" resources="1" stamp="1634598691648" subPackages="false" version="1.0"/>
+</session>

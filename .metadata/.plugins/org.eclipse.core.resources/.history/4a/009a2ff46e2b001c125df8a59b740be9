@@ -1,0 +1,8 @@
+
+public class SistemaInterno {
+
+	private senha = 22;
+	public void autentica(Gerente g) {
+		g.autentica(0)
+	}
+}

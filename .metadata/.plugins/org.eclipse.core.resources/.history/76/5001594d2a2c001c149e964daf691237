@@ -1,0 +1,12 @@
+
+public abstract class CalculadorImposto implements Tributavel {
+	
+	public CalculadorImposto() {
+		
+	}
+	
+	public void registra(Tributavel t) {
+		double valor =  t.getValorImposto();
+	}
+	
+}

@@ -1,0 +1,19 @@
+
+public class TestaSistemaInterno {
+	
+	
+	public static void main(String[] args) {
+		Gerente daniel = new Gerente();
+		daniel.setSenha(21);
+		
+		Administrador adm = new Administrador();
+		adm.setSenha(22);
+		
+		SistemaInterno sistema = new SistemaInterno();
+		sistema.autentica(daniel);
+		sistema.autentica(adm);
+		
+		
+		
+	}
+}

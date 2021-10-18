@@ -1,0 +1,9 @@
+
+public class TestaSistemaInterno {
+	
+	
+	public static void main(String[] args) {
+		Gerente daniel = new Gerente();
+		daniel.setSenha(22);
+	}
+}

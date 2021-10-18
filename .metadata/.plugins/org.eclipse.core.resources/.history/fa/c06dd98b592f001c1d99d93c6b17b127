@@ -1,0 +1,23 @@
+package teste;
+
+public class TestaContas {
+
+	public static void main(String[] args) throws modelo.SaldoInsuficienteException{
+		
+		modelo.ContaCorrente cc = new modelo.ContaCorrente(32, 9722);
+		cc.deposita(500.0);
+		System.out.println(cc.getSaldo());
+		
+		modelo.ContaPoupanca cp = new modelo.ContaPoupanca(35, 44993);
+		cp.deposita(300);
+		System.out.println(cp.getSaldo());
+		
+		cc.transfere(30, cp);
+		
+		
+		System.out.println("Corrente " + cc.getSaldo());
+		System.out.println("Poupanca " + cp.getSaldo());
+		
+	}
+
+}

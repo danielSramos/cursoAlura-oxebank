@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;oxebank-herdado-conta/src/br/com/bytebank&apos; to &apos;oxebank&apos;" description="Rename resource &apos;bytebank&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="src/br/com/bytebank" name="oxebank" stamp="1634483194561" updateReferences="true"/>
+</session>

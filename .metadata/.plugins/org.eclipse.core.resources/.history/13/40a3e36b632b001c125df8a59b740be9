@@ -1,0 +1,10 @@
+
+public class EditorVideo extends Funcionario {
+	private int senha;
+
+	public double getBonificacao() {
+		return super.getBonificacao() + 100;
+	}
+
+
+}
