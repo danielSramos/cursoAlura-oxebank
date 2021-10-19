@@ -94,11 +94,11 @@
 		<item key="openinbrowser" value="false"/>
 		<item key="source" value="1.8"/>
 		<item key="antpath" value="C:\Users\Daniel\eclipse-workspace\oxebank-herdado-conta\javadoc.xml"/>
-		<item key="destdir" value="C:\Users\Daniel\eclipse-workspace\oxebank-herdado-conta\doc"/>
+		<item key="destdir" value="C:\Users\Daniel\Desktop"/>
 		<section name="projects">
 			<section name="oxebank-herdado-conta">
 				<item key="href" value=""/>
-				<item key="destdir" value="C:\Users\Daniel\eclipse-workspace\oxebank-herdado-conta\doc"/>
+				<item key="destdir" value="C:\Users\Daniel\Desktop"/>
 				<item key="antpath" value="C:\Users\Daniel\eclipse-workspace\oxebank-herdado-conta\javadoc.xml"/>
 			</section>
 		</section>

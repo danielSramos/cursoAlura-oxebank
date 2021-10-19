@@ -24,6 +24,10 @@
     <fullyQualifiedTypeName name="SaldoInsuficienteException"/>
     <fullyQualifiedTypeName name="Conexao"/>
     <fullyQualifiedTypeName name="br.com.oxebank.banco.especial.ContaEspecial"/>
-    <fullyQualifiedTypeName name="br.com.oxebank.banco.modelo.Conta"/>
     <fullyQualifiedTypeName name="br.com.oxebank.banco.modelo.ContaCorrente"/>
+    <fullyQualifiedTypeName name="javax.print.CancelablePrintJob"/>
+    <fullyQualifiedTypeName name="javax.naming.CannotProceedException"/>
+    <fullyQualifiedTypeName name="br.com.oxebank.banco.modelo.Conta"/>
+    <fullyQualifiedTypeName name="br.com.oxebank.banco.modelo.ContaPoupanca"/>
+    <fullyQualifiedTypeName name="br.com.oxebank.banco.modelo.Cliente"/>
 </qualifiedTypeNameHistroy>

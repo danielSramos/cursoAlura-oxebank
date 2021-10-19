@@ -1,12 +1,12 @@
 package br.com.oxebank.banco.teste;
 
-import br.com.oxebank.banco.especial.ContaEspecial;
 import br.com.oxebank.banco.modelo.ContaCorrente;
 import br.com.oxebank.banco.modelo.ContaPoupanca;
 import br.com.oxebank.banco.modelo.SaldoInsuficienteException;
 
 public class TestaContas {
 
+	//java.lang.String
 	public static void main(String[] args) throws SaldoInsuficienteException{
 		
 		//Full Qualified Name - FQN 
