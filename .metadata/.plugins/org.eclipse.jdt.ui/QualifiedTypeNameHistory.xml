@@ -24,10 +24,18 @@
     <fullyQualifiedTypeName name="SaldoInsuficienteException"/>
     <fullyQualifiedTypeName name="Conexao"/>
     <fullyQualifiedTypeName name="br.com.oxebank.banco.especial.ContaEspecial"/>
-    <fullyQualifiedTypeName name="br.com.oxebank.banco.modelo.ContaCorrente"/>
     <fullyQualifiedTypeName name="javax.print.CancelablePrintJob"/>
     <fullyQualifiedTypeName name="javax.naming.CannotProceedException"/>
-    <fullyQualifiedTypeName name="br.com.oxebank.banco.modelo.Conta"/>
+    <fullyQualifiedTypeName name="java.lang.Thread"/>
+    <fullyQualifiedTypeName name="java.lang.Thread.State"/>
+    <fullyQualifiedTypeName name="java.lang.annotation.Target"/>
+    <fullyQualifiedTypeName name="java.lang.annotation.Retention"/>
     <fullyQualifiedTypeName name="br.com.oxebank.banco.modelo.ContaPoupanca"/>
+    <fullyQualifiedTypeName name="java.sql.Ref"/>
     <fullyQualifiedTypeName name="br.com.oxebank.banco.modelo.Cliente"/>
+    <fullyQualifiedTypeName name="javax.naming.Reference"/>
+    <fullyQualifiedTypeName name="br.com.oxebank.banco.modelo.GuardadorDeContas"/>
+    <fullyQualifiedTypeName name="java.util.ArrayList"/>
+    <fullyQualifiedTypeName name="br.com.oxebank.banco.modelo.ContaCorrente"/>
+    <fullyQualifiedTypeName name="br.com.oxebank.banco.modelo.Conta"/>
 </qualifiedTypeNameHistroy>

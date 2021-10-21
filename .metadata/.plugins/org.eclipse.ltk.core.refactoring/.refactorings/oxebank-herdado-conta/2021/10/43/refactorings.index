@@ -1,1 +1,9 @@
 1634483194561	Rename resource 'bytebank'
+1634768273914	Rename type 'Teste'
+1634769425905	Rename type 'Teste'
+1634771466747	Rename local variable 'contas'
+1634771856875	Copy compilation unit
+1634772424378	Delete element
+1634772433012	Copy compilation unit
+1634774315351	Rename type 'GuardadorDeContas'
+1634774340353	Rename field 'contasGuardadas'

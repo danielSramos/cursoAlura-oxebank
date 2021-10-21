@@ -1,8 +1,0 @@
-
-public class Administrador extends Funcionario {
-	private int senha;
-	
-	public double getBonificacao() {
-		return 400;
-	}
-}
