@@ -14,14 +14,13 @@ public abstract class Conta {
 	private Cliente titular;
 	private static int total;
 
-	
 	/**
 	 * Construtor para inicializar o objeto Conta a partir da agencia e numero.
 	 * 
 	 * @param agencia
 	 * @param numero
 	 */
-	
+
 	public Conta(int agencia, int numero) {
 		Conta.total++;
 		// System.out.println("Total de contas criadas: " + Conta.total);
@@ -38,7 +37,7 @@ public abstract class Conta {
 	 * @param valor
 	 * @throws SaldoInsuficienteException
 	 */
-	
+
 	public void saca(double valor) throws SaldoInsuficienteException {
 
 		if (this.saldo < valor) {
@@ -48,10 +47,10 @@ public abstract class Conta {
 
 	}
 
-	public void transfere(double valor, Conta destino) throws SaldoInsuficienteException{
+	public void transfere(double valor, Conta destino) throws SaldoInsuficienteException {
 		this.saca(valor);
 		destino.deposita(valor);
-		
+
 	}
 
 	public double getSaldo() {
@@ -93,10 +92,25 @@ public abstract class Conta {
 	public static int getTotal() {
 		return total;
 	}
+
+	@Override
+	public boolean equals(Object conta) {
+
+		Conta novaRef = (Conta) conta;
+
+		if (this.agencia != novaRef.agencia) {
+			return false;
+		}
+		if (this.numero != novaRef.numero) {
+			return false;
+		}
+		else {
+			return true;
+		}
+	}
 	
 	@Override
 	public String toString() {
 		return "Agencia: " + this.agencia + " Numero: " + this.numero;
 	}
-
 }

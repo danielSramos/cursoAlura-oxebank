@@ -1,42 +1,60 @@
 package br.com.oxebank.banco.teste.util;
 
 import java.util.ArrayList;
+import java.util.Comparator;
+import java.util.List;
+
 import br.com.oxebank.banco.modelo.Conta;
 import br.com.oxebank.banco.modelo.ContaCorrente;
+import br.com.oxebank.banco.modelo.ContaPoupanca;
 
 public class Teste {
 
 	public static void main(String[] args) {
-		
-		ArrayList lista = new ArrayList();
-		
-		Conta cc1 = new ContaCorrente(10, 20);
-		lista.add(cc1);
-		Conta cc2 = new ContaCorrente(30, 40);
-		lista.add(cc2);
-		
-		System.out.println("Tamanho: " + lista.size());// ver quantos itens existe no array
-		Conta ref = (Conta) lista.get(0);
-		System.out.println(ref.getNumero());
-		
-		
-		//lista.remove(0);
 
-		System.out.println("Tamanho: " + lista.size());
-		
-		Conta cc3 = new ContaCorrente(50, 60);
+		Conta cc1 = new ContaCorrente(22, 33);
+		cc1.deposita(333.0);
+
+		Conta cc2 = new ContaPoupanca(22, 44);
+		cc2.deposita(444.0);
+
+		Conta cc3 = new ContaCorrente(22, 11);
+		cc3.deposita(111.0);
+
+		Conta cc4 = new ContaPoupanca(22, 22);
+		cc4.deposita(222.0);
+
+		List<Conta> lista = new ArrayList<>();
+		lista.add(cc1);
+		lista.add(cc2);
 		lista.add(cc3);
-		Conta cc4 = new ContaCorrente(70, 80);
 		lista.add(cc4);
-		
-		for (int i = 0; i < lista.size(); i++) {
-			Object oRef = lista.get(i);
-			System.out.println(oRef);
+
+		for (Conta conta : lista) {
+			System.out.println(conta);
 		}
-		//Forma simplificada de fazer um for quando se trata de retorno de objetos
-		System.out.println("----------------------");
-		for(Object oRef : lista) {
-			System.out.println(oRef);
+
+		NumeroDaContaComparator comparador = new NumeroDaContaComparator();
+
+		lista.sort(comparador);
+		System.out.println("----------------");
+
+		for (Conta conta : lista) {
+			System.out.println(conta);
+		}
+	}
+}
+
+class NumeroDaContaComparator implements Comparator<Conta> {
+	@Override
+	public int compare(Conta o1, Conta o2) {
+		if (o1.getNumero() < o2.getNumero()) {
+			return -1;
+		}
+		if (o1.getNumero() > o2.getNumero()) {
+			return 1;
+		} else {
+			return 0;
 		}
 	}
 }
