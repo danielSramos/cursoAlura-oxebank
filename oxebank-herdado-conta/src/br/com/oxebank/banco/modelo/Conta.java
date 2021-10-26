@@ -7,7 +7,7 @@ package br.com.oxebank.banco.modelo;
  * @Version 0.1
  */
 
-public abstract class Conta {
+public abstract class Conta implements Comparable<Conta> {
 	protected double saldo;
 	private int agencia;
 	private int numero;
@@ -112,5 +112,10 @@ public abstract class Conta {
 	@Override
 	public String toString() {
 		return "Agencia: " + this.agencia + " Numero: " + this.numero;
+	}
+	
+	@Override
+	public int compareTo(Conta conta) {
+		return Double.compare(this.saldo, conta.saldo);
 	}
 }

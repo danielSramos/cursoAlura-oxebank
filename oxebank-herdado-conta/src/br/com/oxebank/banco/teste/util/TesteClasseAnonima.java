@@ -1,16 +1,16 @@
 package br.com.oxebank.banco.teste.util;
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.Comparator;
 import java.util.List;
-import java.util.function.Consumer;
 
 import br.com.oxebank.banco.modelo.Cliente;
 import br.com.oxebank.banco.modelo.Conta;
 import br.com.oxebank.banco.modelo.ContaCorrente;
 import br.com.oxebank.banco.modelo.ContaPoupanca;
 
-public class Teste {
+public class TesteClasseAnonima {
 
 	public static void main(String[] args) {
 
@@ -44,17 +44,31 @@ public class Teste {
 		lista.add(cc3);
 		lista.add(cc4);
 
-		// Classe anonima utilizando lambda para enxugar o código
-		lista.sort((c1, c2) -> Integer.compare(c1.getNumero(), c2.getNumero()));
+		// Function Object
+		// NumeroDaContaComparator2 comparadorNum = new NumeroDaContaComparator2();
+		// lista.sort(comparadorNum);
 
-		// Classe anonima usando lambda para enxugar o código, explicitando o tipo do
-		// parametro
-		Comparator<Conta> comp = (Conta c1, Conta c2) -> {
-			String nome1 = c1.getTitular().getNome();
-			String nome2 = c2.getTitular().getNome();
-			return nome1.compareTo(nome2);
+		lista.sort(new Comparator<Conta>() { //classe anonima
+			@Override
+			public int compare(Conta c1, Conta c2) {
+				return Integer.compare(c1.getNumero(), c2.getNumero());
+			}
+		});
+
+		//classe anonima
+		Comparator<Conta> comp = new Comparator<Conta>() {
+
+			@Override
+			public int compare(Conta c1, Conta c2) {
+				String nome1 = c1.getTitular().getNome();
+				String nome2 = c2.getTitular().getNome();
+				return nome1.compareTo(nome2);
+			}
 		};
-		lista.sort(comp);
-		lista.forEach((conta) -> System.out.println("Nome do Titular: " + conta.getTitular().getNome() + ", " + conta + ", Saldo: " + conta.getSaldo()) );
+		
+		for (Conta conta : lista) {
+			System.out.println(
+					"Nome do Titular: " + conta.getTitular().getNome() + ", " + conta + ", Saldo: " + conta.getSaldo());
+		}
 	}
 }

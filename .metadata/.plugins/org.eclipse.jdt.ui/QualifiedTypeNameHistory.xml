@@ -44,4 +44,6 @@
     <fullyQualifiedTypeName name="java.util.ArrayList"/>
     <fullyQualifiedTypeName name="java.util.Comparator"/>
     <fullyQualifiedTypeName name="br.com.oxebank.banco.teste.util.NumeroDaContaComparator"/>
+    <fullyQualifiedTypeName name="br.com.oxebank.banco.teste.util.TitularDaContaComparator"/>
+    <fullyQualifiedTypeName name="java.util.function.Consumer"/>
 </qualifiedTypeNameHistroy>
