@@ -1,7 +1,15 @@
 package br.com.oxebank.banco.modelo;
 
-public class ContaCorrente extends Conta implements Tributavel {
+import java.io.Serializable;
+
+public class ContaCorrente extends Conta implements Tributavel, Serializable {
 	
+	/**
+	 * @author Daniel
+	 * @version 1.0
+	 */
+	private static final long serialVersionUID = 1L;
+
 	public ContaCorrente(int agencia, int numero)  {
 		super(agencia, numero);
 	}

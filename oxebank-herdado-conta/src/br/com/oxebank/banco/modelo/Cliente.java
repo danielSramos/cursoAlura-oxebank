@@ -1,5 +1,7 @@
 package br.com.oxebank.banco.modelo;
 
+import java.io.Serializable;
+
 /**
  * Classe que representa um cliente no Oxebank.
  * 
@@ -9,7 +11,7 @@ package br.com.oxebank.banco.modelo;
  */
 
 
-public class Cliente {
+public class Cliente implements Serializable {
 	
 	private String nome;
 	private String cpf;

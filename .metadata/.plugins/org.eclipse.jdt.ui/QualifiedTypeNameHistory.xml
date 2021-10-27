@@ -36,7 +36,6 @@
     <fullyQualifiedTypeName name="javax.naming.Reference"/>
     <fullyQualifiedTypeName name="br.com.oxebank.banco.modelo.GuardadorDeContas"/>
     <fullyQualifiedTypeName name="br.com.oxebank.banco.modelo.Conta"/>
-    <fullyQualifiedTypeName name="br.com.oxebank.banco.modelo.ContaCorrente"/>
     <fullyQualifiedTypeName name="java.util.LinkedList"/>
     <fullyQualifiedTypeName name="java.util.Vector"/>
     <fullyQualifiedTypeName name="java.util.Collection"/>
@@ -46,4 +45,8 @@
     <fullyQualifiedTypeName name="br.com.oxebank.banco.teste.util.NumeroDaContaComparator"/>
     <fullyQualifiedTypeName name="br.com.oxebank.banco.teste.util.TitularDaContaComparator"/>
     <fullyQualifiedTypeName name="java.util.function.Consumer"/>
+    <fullyQualifiedTypeName name="br.com.oxebank.banco.modelo.ContaCorrente"/>
+    <fullyQualifiedTypeName name="java.io.ObjectInputStream"/>
+    <fullyQualifiedTypeName name="java.io.FileInputStream"/>
+    <fullyQualifiedTypeName name="java.io.Serializable"/>
 </qualifiedTypeNameHistroy>

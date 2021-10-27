@@ -1,5 +1,7 @@
 package br.com.oxebank.banco.modelo;
 
+import java.io.Serializable;
+
 /**
  * Classe que representa o modelo de uma conta
  * 
@@ -7,11 +9,11 @@ package br.com.oxebank.banco.modelo;
  * @Version 0.1
  */
 
-public abstract class Conta implements Comparable<Conta> {
+public abstract class Conta implements Comparable<Conta>, Serializable {
 	protected double saldo;
 	private int agencia;
 	private int numero;
-	private Cliente titular;
+	private transient Cliente titular;
 	private static int total;
 
 	/**
